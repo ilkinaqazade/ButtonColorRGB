@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="Black" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="63,189,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="1" Width="205" Click="Button_Click_2" MouseRightButtonDown="oneNumber" PreviewMouseRightButtonDown="oneMouseDown"/>
+                <Button Content="2" Width="234" Click="Button_Click_3" PreviewMouseRightButtonDown="twoMouseDown"/>
+                <Button Content="3" Click="Button_Click_1" Height="117" Width="251" PreviewMouseRightButtonDown="sreeMouseDown"/>
+                
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="4" Width="205" Click="Button_Click_4" PreviewMouseRightButtonDown="fooMouseDown"/>
+                <Button Content="5" Width="234" Click="Button_Click_5" PreviewMouseRightButtonDown="fiveMouseDown"/>
+                <Button Content="6" Height="104" Width="250" Click="Button_Click_6" PreviewMouseRightButtonDown="sixsMouseDown"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
